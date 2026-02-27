@@ -1,0 +1,77 @@
+{% load static %}
+{% include 'navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Enotes</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- About Section -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h1 class="mb-3">About Us</h1>
+        <p class="lead">
+            This is a Simple E-Notes Management System developed using Python Django, HTML, CSS, Bootstrap and SQLite.
+        </p>
+        <p>
+            This project helps students remember their notes anytime, anywhere. It is designed to be simple, fast, and easy to use.
+        </p>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Team</h2>
+
+        <div class="row justify-content-center g-4">
+
+            <!-- Member 1 -->
+            <div class="col-md-4">
+                <div class="card shadow text-center p-3">
+                    <img src="{% static 'images/deepanshu.jpg' %}" class="rounded-circle mx-auto" width="150" height="150" alt="Pankaj Panjwani">
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Deepanshu Kumar</h5>
+                        <p class="text-muted">CEO & Founder</p>
+                        <p class="card-text">
+                            A Chief Executive Officer (CEO) is the highest-ranking executive of a firm, responsible for major company decisions and overall operations.
+                        </p>
+                        <p class="text-primary">yadavsukhvendra9@gmail@gmail.com</p>
+                        <button class="btn btn-dark" >CALL NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="col-md-4">
+                <div class="card shadow text-center p-3">
+                    <img src="{% static 'images/sukhvendra.jpg' %}" class="rounded-circle mx-auto" width="150" height="150" alt="Abhishek Pandey">
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Sukhvendra Kumar</h5>
+                        <p class="text-muted">Software Developer</p>
+                        <p class="card-text">
+                            A software developer designs, builds, tests, and maintains software systems to solve real-world problems efficiently.
+                        </p>
+                        <p class="text-primary">yadavsukhvendra9@gmail.com</p>
+                        <button class="btn btn-dark">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
