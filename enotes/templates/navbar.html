@@ -8,15 +8,12 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
     <a class="navbar-brand" href="{% url 'index' %}">
         <i class="fa-solid fa-book-open"></i> Enotes
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -51,7 +48,25 @@
     </div>
 </nav>
 
+<style>
+.custom-navbar {
+    background-color: #007bff; /* blue background */
+}
 
+/* black text */
+.navbar-light .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-light .navbar-brand {
+    color: black !important;
+}
+
+/* hover effect */
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+</style>
 <!-- JS (order is important) -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
